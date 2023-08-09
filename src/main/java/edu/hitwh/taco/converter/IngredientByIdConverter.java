@@ -2,6 +2,7 @@ package edu.hitwh.taco.converter;
 
 import edu.hitwh.taco.domain.Ingredient;
 import org.springframework.core.convert.converter.Converter;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,6 +11,7 @@ import java.util.Map;
  * @author Cocoicobird
  * @version 1.0
  */
+@Component
 public class IngredientByIdConverter implements Converter<String, Ingredient> {
 
     private Map<String, Ingredient> ingredientMap = new HashMap<>();

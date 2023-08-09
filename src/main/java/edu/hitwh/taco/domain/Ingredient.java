@@ -9,7 +9,15 @@ import lombok.Data;
 @Data
 public class Ingredient {
     private final String id;
+
+    /**
+     * 配料名称
+     */
     private final String name;
+
+    /**
+     * 配料种类
+     */
     private final Type type;
 
     public enum Type {
